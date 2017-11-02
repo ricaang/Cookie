@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  color: white;
+  background-color: green;
+  background-image: url(../images/header-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+header ul {
+  padding: 0;
+}
+
+header li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.sidebar {
+  width: 40%;
+  float: right;
+  background-color: beige;
+  background-image: url(../images/sidebar-bg.png);
+  padding: 30px;
+}
+
+.recipes {
+  width: 60%;
+  float: left;
+}
+
+article {
+  width: 50%;
+  float: left;
+  padding: 0 20px;
+}
+
+article img {
+  width: 100%;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 30px;
+}
+
+footer img {
+  margin: 0 10px;
+}
+
+a {
+  color: white;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 1px dotted white;
+}
+
+/* Additional Styles */
+.fixed {
+  position: fixed;
+}
+
+.hide {
+  display: none;
+}
+
+.nav-open {
+  display: none;
+}
+
+.nav-open img {
+  max-width: 50px;
+}
+
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,.5);
+}
+
+.modal-box {
+  position: absolute;
+  text-align: center;
+  background: #fff;
+  width: 480px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,.5);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  padding: 0;
+  text-align: center;
+  list-style: none;
+}
+
+nav li {
+  margin-bottom: 30px;
+}
+
+/* Media Queries */
+@media (max-width: 1000px) {
+  .sidebar {
+    display: none;
+  }
+
+  .recipes, .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-open {
+    display: block;
+  }
+
+  header ul {
+    display: none;
+  }
+
+  article {
+    width: 100%;
+  }
+}
